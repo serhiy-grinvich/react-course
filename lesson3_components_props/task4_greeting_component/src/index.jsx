@@ -7,9 +7,9 @@ const rootElem = document.querySelector('#root');
 
 ReactDOM.render(
   <Greeting
-    firstName="Tom"
-    lastName="Kozlov"
-    birthDate={new Date('1966-01-9')}
+    firstName="John"
+    lastName="Doe"
+    birthDate={new Date('2006-01-9')}
   />,
   rootElem
 );
