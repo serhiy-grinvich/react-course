@@ -1,0 +1,1 @@
+body{font-family:Arial,Helvetica,sans-serif}#root{height:100vh;display:flex;background-color:rgba(211,211,211,.7)}.profile{margin:auto;padding:8px;border:2px dotted rgba(192,54,54,.7);border-radius:10px;color:rgba(12,10,10,.7)}.profile__name{font-size:28px;font-weight:700}.profile__birth{color:#7f6f6f}.profile__birth>span{font-size:18px;font-weight:700;color:rgba(190,20,20,.6)}
