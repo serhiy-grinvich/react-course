@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Search = (props) => {
+const Greeting = (props) => {
   const age = new Date(Date.now() - props.birthDate).getFullYear() - 1970;
   // console.log(age);
 
@@ -9,4 +9,4 @@ const Search = (props) => {
   );
 };
 
-export default Search;
+export default Greeting;
