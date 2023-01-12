@@ -5,7 +5,7 @@ const Greeting = ({ firstName, lastName, birthDate }) => {
   // console.log(birthDate);
 
   return (
-    <div className="greeting">{`My name is ${firstName} ${lastName}. I am ${age} years old`}</div>
+    <div className="greeting">{`My name is ${firstName} ${lastName}. I'm ${age} years old`}</div>
   );
 };
 
