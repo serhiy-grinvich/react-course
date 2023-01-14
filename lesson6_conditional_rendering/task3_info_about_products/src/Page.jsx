@@ -19,7 +19,8 @@ class Page extends React.Component {
   render() {
     return (
       <div className="page">
-        {this.state.message && <Info message={this.state.message} />}
+        {/* {this.state.message && <Info message={this.state.message} />} */}
+        <Info message={this.state.message} />
         <div className="actions">
           <button className="btn" onClick={() => this.setMessage(iphone13)}>
             IPhone 13
