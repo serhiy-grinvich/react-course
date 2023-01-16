@@ -9,7 +9,7 @@ class TransactionsList extends React.Component {
     //   ...transaction,
     //   amount: formatter.format(transaction.amount),
     //   date: moment(transaction.time).format('D MMM'),
-    //   time: moment(transaction.time).locale('uk').format('LT'),
+    //   time: moment(transaction.time).locale('en-gb').format('LT'),
     // }));
     // console.log(transactions);
     return (

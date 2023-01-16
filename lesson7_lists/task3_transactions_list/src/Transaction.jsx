@@ -5,7 +5,7 @@ const Transaction = ({ from, to, amount, rate, time /*date*/ }) => {
   let formatter = new Intl.NumberFormat('en-GB');
   const formattedAmount = formatter.format(amount);
   const date = moment(time).format('D MMM');
-  const formattedTime = moment(time).locale('uk').format('LT');
+  const formattedTime = moment(time).locale('en-gb').format('LT');
   return (
     <li className="transaction">
       <span className="transaction__date">{date}</span>
