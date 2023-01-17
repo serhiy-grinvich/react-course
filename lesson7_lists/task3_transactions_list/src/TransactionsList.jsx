@@ -1,6 +1,6 @@
 import React from 'react';
 import Transaction from './Transaction';
-import moment from 'moment';
+// import moment from 'moment';
 
 // const formatter = new Intl.NumberFormat('en-GB');
 
