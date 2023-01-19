@@ -30,7 +30,7 @@ class ConnectionStatus extends React.Component {
   render() {
     return (
       <div className={this.state.status ? 'status' : 'status status_offline'}>
-        {this.state.status ? 'Online' : 'Offline'}
+        {this.state.status ? 'online' : 'offline'}
       </div>
     );
   }
