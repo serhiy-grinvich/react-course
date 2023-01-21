@@ -11,8 +11,8 @@ class UsersList extends React.Component {
     // this.usersList = this.props.users;
   }
 
-  handleChange = (textValue) => {
-    this.setState({ filterText: textValue });
+  handleChange = (e) => {
+    this.setState({ filterText: e.target.value });
     // this.filterUsersByName(textValue);
   };
 
