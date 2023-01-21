@@ -6,9 +6,9 @@ class Filter extends React.Component {
     this.state = {};
   }
 
-  handleTextChange = (e) => {
-    this.props.onChange(e.target.value);
-  };
+  //   handleTextChange = (e) => {
+  //     this.props.onChange(e.target.value);
+  //   };
   render() {
     return (
       <div className="filter">
@@ -17,7 +17,8 @@ class Filter extends React.Component {
           type="text"
           className="filter__input"
           value={this.props.filterText}
-          onChange={this.handleTextChange}
+          //   onChange={this.handleTextChange}
+          onChange={(e) => this.props.onChange(e.target.value)}
         />
       </div>
     );
