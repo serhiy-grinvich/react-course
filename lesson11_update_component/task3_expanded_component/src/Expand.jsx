@@ -13,7 +13,7 @@ const Expand = ({ isExpanded, onChange, title, children }) => {
           {/* <FontAwesomeIcon icon="fas fa-chevron-up" /> */}
         </button>
       </div>
-      {children}
+      {isExpanded ? children : null}
     </div>
   );
 };
@@ -22,7 +22,7 @@ Expand.propTypes = {
   isExpanded: PropTypes.bool,
   onChange: PropTypes.func.isRequired,
   title: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.element.isRequired,
 };
 
 Expand.defaultProps = {

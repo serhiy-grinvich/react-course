@@ -21,14 +21,12 @@ class App extends React.Component {
           isExpanded={this.state.isExpanded}
           onChange={this.toggleExpand}
         >
-          {this.state.isExpanded ? (
-            <div className="expand__content">
-              <p>
-                Hooks are a new addition in React 16.8. They let you use state
-                and other React features without writing a class.
-              </p>
-            </div>
-          ) : null}
+          <div className="expand__content">
+            <p>
+              Hooks are a new addition in React 16.8. They let you use state and
+              other React features without writing a class.
+            </p>
+          </div>
         </Expand>
       </div>
     );
