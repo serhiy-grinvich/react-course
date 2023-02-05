@@ -13,7 +13,7 @@ const Expand = ({ isExpanded, onChange, title, children }) => {
           {/* <FontAwesomeIcon icon="fas fa-chevron-up" /> */}
         </button>
       </div>
-      <div className="expand__content">{children}</div>
+      {children}
     </div>
   );
 };
