@@ -16,6 +16,7 @@ class User extends React.Component {
       `https://api.github.com/users/${this.props.match.params.userId}`
     ).then((userData) => this.setState({ user: userData }));
   }
+
   componentDidUpdate(prevProps) {
     if (prevProps.match.params.userId !== this.props.match.params.userId) {
       fetchUser(
@@ -24,8 +25,12 @@ class User extends React.Component {
     }
   }
 
+  //   componentWillUnmount() {
+  //     console.log('unmount');
+  //   }
   render() {
-    // alert('render user comp');
+    // console.log('render');
+
     const { name, location, avatar_url } = this.state.user;
     return (
       <div className="user">
