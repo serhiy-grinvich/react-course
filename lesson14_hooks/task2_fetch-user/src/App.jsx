@@ -1,31 +1,56 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import Home from './Home';
-import Users from './Users';
+import User from './User';
 
 const App = () => {
   return (
-    <div className="page">
-      <Router>
-        <ul className="navigation">
-          <li className="navigation__item">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="navigation__item">
-            <Link to="/users">Users</Link>
-          </li>
-        </ul>
-        <Switch>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    // <!-- App -->
+    <Router>
+      <div className="page">
+        <div className="page__content">
+          <h1>Users</h1>
+          <ul className="navigation">
+            <li className="navigation__item">
+              <Link to="/users/github">Github</Link>
+            </li>
+            <li className="navigation__item">
+              <Link to="/users/facebook">Facebook</Link>
+            </li>
+          </ul>
+          <Switch>
+            <Route path="/users/:userId">
+              <User />
+            </Route>
+            <Route exact path="/">
+              <span>Select a user please</span>
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
+  // return (
+  //   <div className="page">
+  //     <Router>
+  //       <ul className="navigation">
+  //         <li className="navigation__item">
+  //           <Link to="/">Home</Link>
+  //         </li>
+  //         <li className="navigation__item">
+  //           <Link to="/users">Users</Link>
+  //         </li>
+  //       </ul>
+  //       <Switch>
+  //         <Route path="/users">
+  //           <Users />
+  //         </Route>
+  //         <Route exact path="/">
+  //           <Home />
+  //         </Route>
+  //       </Switch>
+  //     </Router>
+  //   </div>
+  // );
 };
 
 export default App;
