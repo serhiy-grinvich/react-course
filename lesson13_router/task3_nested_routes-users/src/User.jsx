@@ -29,7 +29,7 @@ class User extends React.Component {
   //     console.log('unmount');
   //   }
   render() {
-    // console.log('render');
+    console.log('render');
 
     const { name, location, avatar_url } = this.state.user;
     return (
